@@ -1,0 +1,11 @@
+My email: {{email}}
+
+<form {{action 'submitMessage' on='submit'}}>
+  <p>Name: {{input value=name}}</p>
+  <p>E-mail: {{input value=mail}}</p>
+  <p>Theme: {{input value=theme}}</p>
+  <p>Text: {{textarea value=message}}</p>
+  <button   type="submit">Submit</button>
+</form>
+
+{{outlet}}

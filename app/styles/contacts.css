@@ -1,0 +1,6 @@
+.contact-me-background {
+	position: absolute;
+	background-image: url('/contact-me.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}

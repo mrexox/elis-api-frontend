@@ -1,0 +1,12 @@
+<div class="home-posts">
+{{#each  posts as |post|}}
+  <div class="home-posts__post">
+    Id: {{post.id}}
+    name: {{post.title}}
+    text: {{post.text}}
+    permalink: {{post.permalink}}
+    likes: {{post.likes}}
+  </div>
+{{/each}}
+</div>
+{{yield}}

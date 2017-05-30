@@ -1,0 +1,52 @@
+body {
+	background-image: url("/home-background.jpg");
+	background-size: 100% auto;
+}
+.home-container {
+	margin-top: 60%;
+	background-color:white;
+}
+/*.portfolio {
+	background-image: url("/portfolio.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+}*/
+.portfolio {
+	width: 100%;
+	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+.portfolio__image {
+	width: 100%;
+	position: absolute;
+	z-index: 0;
+}
+.portfolio__show-btn {
+	border: 3px solid white;
+	justify-content: center;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	background: none;
+	width: 22%;
+	height: 50px;
+	padding-top: 6px;
+	display: flex;
+	margin-top: 35%;
+	z-index: 1;
+}
+.portfolio__show-btn:hover {
+	background-color: #debdac;
+	opacity: 0.9;
+	cursor: pointer;
+}
+.posts {
+	height: 800px;
+}
