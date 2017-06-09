@@ -4,7 +4,9 @@ export default DS.Model.extend({
   title: DS.attr('string'),
   text: DS.attr('string'),
   permalink: DS.attr('string'),
-  likes: DS.attr('number'),
+  //visible: DS.attr('boolean', {defaultValue: false}),
   createdAt: DS.attr('date'),
-  tags: DS.hasMany('tag')
+  likes: DS.attr('number'),
+  tags: DS.hasMany('tag'),
+  cover: DS.belongsTo('image')
 });

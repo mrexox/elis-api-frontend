@@ -7,9 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('home', {path: '/'});
   this.route('home');
   this.route('blog');
-  this.route('blogpost', {path: 'blog/:permalink'})
+  this.route('blogpost', {path: 'blog/:permalink'});
   this.route('portfolio');
   this.route('about');
   this.route('contacts', {path: 'contact-me'});

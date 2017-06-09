@@ -14,33 +14,43 @@ body {
 }*/
 .portfolio {
 	width: 100%;
-	display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+/*	display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row /* works with row or column */
+   -webkit-flex-direction: row  works with row or column 
    flex-direction: row;
    -webkit-align-items: center;
    align-items: center;
    -webkit-justify-content: center;
-   justify-content: center;
+   justify-content: center;*/
+/*  background-image: url(/portfolio.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;*/
 }
 .portfolio__image {
-	width: 100%;
-	position: absolute;
-	z-index: 0;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: block;
 }
 .portfolio__show-btn {
-	border: 3px solid white;
-	justify-content: center;
-	color: white;
-	font-weight: bold;
-	font-size: 20px;
-	background: none;
-	width: 22%;
-	height: 50px;
-	padding-top: 6px;
-	display: flex;
-	margin-top: 35%;
-	z-index: 1;
+  z-index: 2;
+  text-align: center;
+  position: relative;
+  max-width: 300px;
+  min-width: 100px;
+
+  left: 0;
+  right: 0;
+  top: 210px;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  font-size: 2em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .portfolio__show-btn:hover {
 	background-color: #debdac;
@@ -50,3 +60,6 @@ body {
 .posts {
 	height: 800px;
 }
+.home-posts {
+  display: block;
+} 

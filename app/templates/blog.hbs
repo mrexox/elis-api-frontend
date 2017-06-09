@@ -1,7 +1,8 @@
 {{#each model as |post|}}
+  <p>
 Title:  {{post.title}}
   <br>
- Text: {{post.text}}
+  Text: {{{post.text}}}
   <br>
  Likes: {{post.likes}}
   <br>
@@ -9,5 +10,9 @@ Title:  {{post.title}}
   <br>
  Created at: {{post.createdAt}}
  <br>
- Tags:  {{post.tags}}  <br>
+ Tags:  
+ {{#each post.tags as |tag|}}
+   {{tag.tagName}}<br>
+ {{/each}}
+ </p>
 {{/each}}

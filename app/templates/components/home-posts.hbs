@@ -1,12 +1,14 @@
-<div class="home-posts">
 {{#each  posts as |post|}}
   <div class="home-posts__post">
-    Id: {{post.id}}
-    name: {{post.title}}
-    text: {{post.text}}
-    permalink: {{post.permalink}}
-    likes: {{post.likes}}
+    {{#link-to 'blogpost' post.permalink class='post__title'}}
+      {{post.title}}
+    {{/link-to}}
+    <img class="post__cover" src="{{imageHost}}{{post.cover.url}}">
+    <hr>
+    <div class="post__text">
+      {{{post.text}}}
+    </div>
+    <i class="fa fa-heart post__likes"> {{post.likes}}</i>
   </div>
 {{/each}}
-</div>
 {{yield}}
