@@ -1,0 +1,28 @@
+<div class="blog-posts">
+{{#each posts as |post index|}}
+	<div class="blog__post">
+		<span class="blog__title">
+			{{post.title}}
+		</span>
+		<span class="blog__date">
+			{{moment-format post.createdAt 'DD MMMM YYYY \a\t HH:MM'}}
+		</span>
+		<hr />
+		{{#if post.cover}}
+			<img class="blog__cover" src="{{host}}{{post.cover.url}}" />
+		<hr />
+		{{/if}}
+		<div>
+			{{{post.text}}}
+		</div>
+		<i class="fa fa-heart post__likes">
+			{{post.likes}}
+		</i>
+	</div>
+	{{#if neq index posts.length}}
+	<hr class="hr" />
+	{{/if}}
+{{/each}}
+</div>
+
+{{yield}}

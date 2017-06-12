@@ -1,18 +1,3 @@
-{{#each model as |post|}}
-  <p>
-Title:  {{post.title}}
-  <br>
-  Text: {{{post.text}}}
-  <br>
- Likes: {{post.likes}}
-  <br>
-  Permalink: {{post.permalink}}
-  <br>
- Created at: {{post.createdAt}}
- <br>
- Tags:  
- {{#each post.tags as |tag|}}
-   {{tag.tagName}}<br>
- {{/each}}
- </p>
-{{/each}}
+{{! here comes a slider}}
+
+{{blog-posts posts=model}}

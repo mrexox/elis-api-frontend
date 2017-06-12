@@ -1,0 +1,42 @@
+.blog {
+		padding-top: 40px;
+}
+.blog-posts {
+		background: white;	
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+}
+
+.blog__post {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: flex-start;
+		width:70%
+}
+
+.blog__title {
+		font-size: 3em;
+		display: block;
+		margin: auto;
+}
+
+.blog__date {
+	color: gray;
+	margin: 0 auto;
+}
+
+.blog__cover {
+		width: 100%;
+		display: block;
+		box-shadow: 0 10px 10px 1px #C7AFAF;
+}
+
+hr.hr {
+	border-top: 1px dashed #8c8b8b;
+	width: 70%;
+}
