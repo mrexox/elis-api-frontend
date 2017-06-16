@@ -1,31 +1,15 @@
-<!--<div id="menu" class="container hat on-the-top">
-	<div class="row-fluid">
-		<nav class="navbar navbar-default center">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li id="menu-element">{{#link-to 'home'}}HOME{{/link-to}}</li>
-					<li  id="menu-element">{{#link-to 'blog'}}BLOG{{/link-to}}</li>
-					<li id="menu-element">{{#link-to 'shop'}}SHOP{{/link-to}}</li>
-					<li id="menu-element">{{#link-to 'portfolio'}}PORTFOLIO{{/link-to}}</li>
-					<li id="menu-element">{{#link-to 'about'}}ABOUT{{/link-to}}</li>
-					<li id="menu-element">{{#link-to 'contacts'}}CONTACTS{{/link-to}}</li>
-				</ul>
-			</div>
-		</nav>
+<div class="menu-wrapper">
+	<div class="toggler" hidden>
+		<div></div>
+		<div></div>
+		<div></div>
 	</div>
-</div>-->
 <nav class="menu">
-  {{#link-to 'home'}}Home{{/link-to}}
-  {{#link-to 'blog'}}Blog{{/link-to}}
-  {{#link-to 'portfolio'}}Portfolio{{/link-to}}
-  {{#link-to 'contacts'}}Contact me{{/link-to}}
-  {{#link-to 'admin.posts'}}Admin/Posts{{/link-to}}
+  {{#link-to 'home'}}HOME{{/link-to}}
+  {{#link-to 'blog'}}BLOG{{/link-to}}
+  {{#link-to 'portfolio'}}PORTFOLIO{{/link-to}}
+  {{#link-to 'contacts'}}CONTACT ME{{/link-to}}
+  {{#link-to 'admin.posts'}}ADMIN/POSTS{{/link-to}}
 </nav>
+</div>
 {{yield}}

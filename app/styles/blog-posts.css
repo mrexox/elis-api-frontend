@@ -1,5 +1,4 @@
 .blog {
-		padding-top: 40px;
 }
 .blog-posts {
 		background: white;	
@@ -24,6 +23,11 @@
 		display: block;
 		margin: auto;
 }
+@media screen and (max-width: 720px) {
+	.blog__title {
+		font-size: 2em;
+	}
+}
 
 .blog__date {
 	color: gray;
@@ -33,7 +37,6 @@
 .blog__cover {
 		width: 100%;
 		display: block;
-		box-shadow: 0 10px 10px 1px #C7AFAF;
 }
 
 hr.hr {

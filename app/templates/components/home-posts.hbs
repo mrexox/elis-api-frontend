@@ -3,12 +3,14 @@
     {{#link-to 'blogpost' post.permalink class='post__title'}}
       {{post.title}}
     {{/link-to}}
+		{{#if post.cover}}
     <img class="post__cover" src="{{imageHost}}{{post.cover.url}}">
+		{{/if}}
     <hr>
     <div class="post__text">
       {{{post.text}}}
     </div>
-    <i class="fa fa-heart post__likes"> {{post.likes}}</i>
+		<!--    <i class="fa fa-heart post__likes"> {{post.likes}}</i>-->
   </div>
 {{/each}}
 {{yield}}
