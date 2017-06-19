@@ -1,5 +1,6 @@
 {
   "name": "elis-frontend",
   "dependencies": {
+    "flickity": "^2.0.8"
   }
 }
